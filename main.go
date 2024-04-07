@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 
 	"github.com/gorilla/websocket"
@@ -42,4 +43,5 @@ func main() {
 	})
 
 	http.ListenAndServe(":8080", nil)
+	log.Println("Server is running: 8080")
 }
